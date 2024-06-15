@@ -1,83 +1,211 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*<!--------------------------- header --------------------------->*/
-.cabezera{
+.cabezera {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:SteelBlue;
+    background-color: SteelBlue;
     color: white;
 }
 
-.logo-menu{
+.logo-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
-.logo-menu>h1{
+.logo-menu > h1 {
     font-size: 25px;
     padding: 20px;
     font-weight: bold;
 }
 
-.logo-menu>a{
-    font-size: 20px;
+.logo-menu > a {
+    font-size: 18px;
     padding: 15px;
     margin: 5px;
     text-decoration: none;
     color: white;
 }
 
-.logo-menu>a:hover{
+.logo-menu > a:hover {
     background-color: white;
     color: SteelBlue !important;
     border-radius: 20px;
 }
 
-.active{
+.active {
     background-color: white;
     color: SteelBlue !important;
     border-radius: 20px;
 }
 
-.buscador{
+.buscador {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.text{
+.text {
     border-radius: 10px;
     padding: 10px;
     border: none;
     font-size: 16px;
 }
 
-.submit{
+.submit {
     background-color: white;
     color: SteelBlue !important;
     border-radius: 5px;
     padding: 5px;
     border: none;
-    
 }
 
-.perfil{
+.perfil {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.perfil>a{
+.perfil > a {
     font-weight: bold;
 }
 
+/*<!--------------------------- main --------------------------->*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto-perfil-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.lista-perfil-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 50px;
+}
+
+hr {
+    width: 100vw;
+    text-align: center;
+}
+
+.fotos-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.highlights1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.highlights1 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.highlights1 > div > h4 {
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.photos > div {
+    display: flex;
+    height: 400px;
+}
+
+.photos > div > img {
+    width: 250px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/*<!--------------------------- footer --------------------------->*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: SteelBlue;
+    padding: 10px;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-footer > h2 {
+    font-size: 16px;
+}
+
+.activity {
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 2px;
+    text-align: center;
+}
+
+.activity > h4,
+td {
+    font-size: 14px;
+    font-weight: normal;
+}
